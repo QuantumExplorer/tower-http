@@ -9,7 +9,7 @@ license = "MIT"
 [dependencies]
 hyper = { version = "0.14.15", features = ["full"] }
 tokio = { version = "1.2.0", features = ["full"] }
-tower = { version = "0.4.13", features = ["full"] }
+tower = { git = "https://github.com/QuantumExplorer/tower", branch = "fix/indexMap2OnV0413", features = ["full"] }
 tower-http = { path = "../../tower-http", features = ["full"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3.11", features = ["env-filter"] }

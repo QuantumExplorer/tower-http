@@ -13,8 +13,8 @@ prost = "0.11"
 tokio = { version = "1.2.0", features = ["full"] }
 futures = "0.3"
 tokio-stream = { version = "0.1", features = ["sync", "net"] }
-tonic = "0.9"
-tower = { version = "0.4.5", features = ["full"] }
+tonic = { git = "https://github.com/QuantumExplorer/tonic", branch = "fix/updateTower0nV0110" }
+tower = { git = "https://github.com/QuantumExplorer/tower", branch = "fix/indexMap2OnV0413", features = ["full"] }
 tower-http = { path = "../../tower-http", features = ["full"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
