@@ -16,12 +16,13 @@ rust-version = "1.60"
 bitflags = "2.0.2"
 bytes = "1"
 futures-core = "0.3"
-futures-util = { version = "0.3.14", default_features = false, features = [] }
+futures-util = { version = "0.3.30", default_features = false, features = [] }
 http = "0.2.7"
 http-body = "0.4.5"
 pin-project-lite = "0.2.7"
-tower-layer = "0.3"
-tower-service = "0.3"
+tower-layer = {git = "https://github.com/QuantumExplorer/tower.git/", branch = "v0.4.x"}
+tower-service = {git = "https://github.com/QuantumExplorer/tower.git/", branch = "v0.4.x"}
+
 
 # optional dependencies
 async-compression = { version = "0.4", optional = true, features = ["tokio"] }
@@ -33,7 +34,7 @@ mime_guess = { version = "2", optional = true, default_features = false }
 percent-encoding = { version = "2.1.0", optional = true }
 tokio = { version = "1.6", optional = true, default_features = false }
 tokio-util = { version = "0.7", optional = true, default_features = false, features = ["io"] }
-tower = { version = "0.4.1", optional = true }
+tower = { git = "https://github.com/QuantumExplorer/tower.git/", branch = "v0.4.x", optional = true }
 tracing = { version = "0.1", default_features = false, optional = true }
 httpdate = { version = "1.0", optional = true }
 uuid = { version = "1.0", features = ["v4"], optional = true }
